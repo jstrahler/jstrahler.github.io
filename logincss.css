@@ -1,0 +1,26 @@
+div.menu ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+div.menu li{
+	display: inline;  
+}
+div.menu li a{
+	color: black;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 15px;
+}
+div.menu a:hover{
+	color: white;
+}
+div.main{
+	margin-top: 40px;
+	text-align: center;	
+	color: white;
+}
+html{
+	background-image: url("space_background.jpg");
+}

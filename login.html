@@ -1,0 +1,47 @@
+<HTML>
+	<title> Nightt's Personal Webserver </title>
+	<HEAD>
+		<link rel="stylesheet" type="text/css" href="logincss.css">
+	</HEAD>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="login.html">Login</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="main">
+		<H1>Passphrase</H1>
+		<input id="pass">
+
+		<button type="button" onclick="myFunction()">
+			Submit
+		</button>
+
+		<p id="deny"> </p>
+		
+		
+		<script>
+			function myFunction() {
+				
+				var pass = ["Town", "over", "run", "with", "dead", "If", "they", "fight", "they", "die", "The", "witch", "pops", "up", "to", "help", "them", "leave", "the", "city", "A", "fight", "will", "happen", "but", "right", "before", "they", "die", "the", "witch", "will", "pop", "up", "nor", "save", "them", "nightt", "gives", "them", "a", "shroud", "that", "allows", "them", "to", "walk", "around", "the", "town", "for", "a", "limited", "time", "They", "will", "be", "invisible", "to", "the", "dead", "They", "will", "encounter", "Kate", "on", "the", "way", "back", "Kate", "will", "be", "out", "hunting", "Ultimately", "try", "to", "have", "them", "go", "back", "to", "the", "kingdom", "On", "the", "way", "back", "they", "will", "encounter", "a", "group", "of", "bandits", "in", "combat", "with", "some", "guards", "If", "they", "choose", "to", "help", "nightt", "they", "use", "magic", "the", "guards", "will", "turn", "nightt", "try", "to", "arrest", "them", "jason", "the", "goblin", "try", "to", "manipulate", "the", "group", "to", "get", "the", "staff", "from", "the", "resistance", "leader", "who", "keeps", "it", "in", "his", "quarters", "The", "door", "to", "his", "quarters", "leads", "to", "a", "different", "dimensions", "There", "are", "many", "traps", "nightt fury", "pathsThe", "prince", "has", "discovered", "that", "there", "is", "no", "way", "into", "the", "castle", "because", "the", "king", "has", "doubled", "the", "guards", "nightt", "if", "one", "is", "strahler", "the", "guards", "are", "altered", "However", "there", "is", "a", "maze", "in", "the", "woods", "with", "nightt", "monitor", "that", "once", "they", "get", "to", "the", "center", "will", "teleport", "them", "into", "the", "kings", "room", "The", "witch", "made", "this", "teleported", "nightt", "maze", "as", "a", "way", "to", "quickly", "get", "back", "into", "the", "castle", "so", "that", "she", "can", "get", "there", "to", "help", "She", "used", "to", "be", "very", "close", "nightt", "trusted", "individual", "in", "the", "kingdom", "At", "the", "castle", "gates", "the", "guard", "will", "have", "them", "wait", "on", "an", "audience", "with", "the", "king", "The", "prince", "will", "go", "out", "riding", "and", "when", "he", "passes", "the", "group", "he", "will", "tell", "them", "to", "meet", "him", "in", "the", "woods"];
+				var x,
+				    text;
+
+				x = document.getElementById("pass").value;
+				if (x.valueOf() == pass[37]) {
+					text = "Access Granted";
+					window.open("hidden.html", '_self', false);
+				} else {
+					text = "Access Denied";
+				}
+				document.getElementById("deny").innerHTML = text;
+			}
+		</script>
+
+	</div>
+</HTML>

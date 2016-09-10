@@ -1,0 +1,56 @@
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" type="text/css" href="hiddencss.css">
+	</HEAD>
+	
+	<div class="menu">
+			<ul>
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+	<Title> Nightt's Personal Webserver </Title>
+
+	<h1> Main Message </h1>
+	<div class="message">
+		<p id="text">
+			
+		 </p>
+		
+	</div>
+	
+	
+	
+	<div class="menu2">
+		<div>
+		<button type="button" onclick="changeText(1)" style="width: 110px; height: 50px;">
+			Picture
+		</button>
+		</div>
+		<div>
+			<button type="button" onclick="changeText(2)" style="width: 110px; height: 50px;">
+			Note
+		</button>
+		</div>
+		<div>
+			<button type="button" onclick="changeText(3)" style="width: 110px; height: 50px;">
+			Letter
+		</button>
+		</div>
+		</div>
+		
+		
+	<script>
+		function changeText(x) {
+			if (x == 1){
+				window.open('straw.jpg');
+			} else if (x==2){
+				x = ('Hey, this image is an early birthday present for you. I didnt want to forget it so you are getting it now. And I cant do something like you did to me on my birthday. I wanted to though. This is an image of you as karma, I did not draw it I had a friend that owed me a favor. Well Happy Early Birthday!   ~Jaaaaaaaaason');
+			} else if (x==3){
+				window.open('TheLetter2.txt');
+			}
+			
+			document.getElementById("text").innerHTML = x;
+		}
+	</script>
+</HTML>

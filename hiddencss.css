@@ -1,0 +1,50 @@
+div.message{
+	position: absolute;
+	left: 140px;
+	right: 80px;
+	margin-top: 80px;
+	background-color: gray;
+	color: white;
+	font-size: 30px;
+	font-family: "Times New Roman";
+}
+
+body{
+	background-image: url("space_background.jpg");
+}
+h1{
+	color: white;
+	text-align: center;
+	font-size: 48px;
+	margin-top: 30px;
+}
+}
+div.menu ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+div.menu li{
+	display: inline;  
+}
+div.menu li a{
+	color: black;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 15px;
+}
+div.menu a:hover{
+	color: white;
+}
+div.menu2 {
+	position: relative;
+	display: inline;
+	left: 10px;	
+	top: 40px;
+}
+div.menu2 div{
+	margin-top: 5px;
+	
+		
+}
