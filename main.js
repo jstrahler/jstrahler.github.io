@@ -3,7 +3,7 @@
 var myHeading = document.querySelector('h1');
 
 
-readTextFile("file:///http://pi.ajpappas.net/api/discord/gametracker/games.txt");
+readTextFile("file:///1.txtt");
 
 function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
