@@ -3,7 +3,7 @@
 var myHeading = document.querySelector('h1');
 
 
-readTextFile("file:///1.txtt");
+readTextFile("file:///1.txt");
 
 function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
