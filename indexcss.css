@@ -4,15 +4,15 @@ body{
 }
 div.menu ul{
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: gray;
+    	margin: 0;
+    	padding: 0;
+    	background-color: #717272;
 }
 div.menu li{
 	display: inline;  
 }
 div.menu li a{
-	color: gray;
+	color: #717272;
 	font-size: 30px;
 	text-decoration: none;
 	margin: 15px;
