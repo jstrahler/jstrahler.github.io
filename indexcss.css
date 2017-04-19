@@ -12,13 +12,10 @@ div.menu li{
 	display: inline;  
 }
 div.menu li a{
-	color: black;
+	color: gray;
 	font-size: 30px;
 	text-decoration: none;
 	margin: 15px;
-}
-div.menu a:hover{
-	color: white;
 }
 
 div a img{
