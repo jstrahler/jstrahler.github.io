@@ -1,0 +1,73 @@
+﻿<html>
+<title>
+    Nightt's Personal Webserver
+</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="indiv_gallery_css.css">
+</head>
+<div class="menu">
+    <ul>
+        <li><a href="http://nighttfury.com/">Home</a></li>
+    </ul>
+</div>
+<h1>
+    Valka Haddock
+</h1>
+
+<body>
+    <div class="imgContainer">
+        <img id="myImg" src="https://imgur.com/rhC7ROS.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/d4fYeKV.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/1o0fl7e.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/Qd2PStC.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/GCRWECk.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/a3GVDC3.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/kdg8EIS.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/CAss34Z.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/Jy1cVnz.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/HCOXVYO.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/m66ZG3s.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/HeQLKnH.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/QSz0ONU.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/1Ks6nFM.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/JloAJRX.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/YXmBk1D.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/E0i3Kkp.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/Db48iZC.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/14upA7E.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/uN63j7o.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/1AlR9Kz.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/U1I0zOG.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/uEIpOGX.jpg" alt="" onclick="imageClicked(this.src)">
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+
+    <script>
+        function imageClicked(id) {
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = id;
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
