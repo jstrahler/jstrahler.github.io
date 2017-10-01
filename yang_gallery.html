@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <title>
     Nightt's Personal Webserver
 </title>
@@ -16,22 +16,47 @@
 
 <body>
     <div class="imgContainer">
-        <img src="https://imgur.com/3cm17U9.jpg" alt="">
-        <img src="https://imgur.com/HgqIlSN.jpg" alt="">
-        <img src="https://imgur.com/Fu4eFbV.jpg" alt="">
-        <img src="https://imgur.com/j37GP5F.jpg" alt="">
-        <img src="https://imgur.com/cbE6wXa.jpg" alt="">
-        <img src="https://imgur.com/TbUJjaM.jpg" alt="">
-        <img src="https://imgur.com/WVaYInA.jpg" alt="">
-        <img src="https://imgur.com/0ZwDJBE.jpg" alt="">
-        <img src="https://imgur.com/ennEzZE.jpg" alt="">
-        <img src="https://imgur.com/9bpNfQk.jpg" alt="">
-        <img src="https://imgur.com/JtJ9Kls.jpg" alt="">
-        <img src="https://imgur.com/q3wB82h.jpg" alt="">
+        <img id="myImg" src="https://imgur.com/3cm17U9.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/HgqIlSN.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/Fu4eFbV.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/j37GP5F.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/cbE6wXa.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/TbUJjaM.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/WVaYInA.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/0ZwDJBE.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/ennEzZE.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/9bpNfQk.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/JtJ9Kls.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/q3wB82h.jpg" alt="" onclick="imageClicked(this.src)">
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
     </div>
 
 
+    <script>
+        function imageClicked(id) {
+            // Get the modal
+            var modal = document.getElementById('myModal');
 
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = id;
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
 
 </body>
 </html>
