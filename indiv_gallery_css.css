@@ -1,0 +1,41 @@
+﻿body{
+	background-image: url("purplespace.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+div.menu ul{
+	list-style-type: none;
+   	margin: 0;
+   	padding: 0;
+    	background-color: gray;
+}
+div.menu li{
+	display: inline;  
+}
+div.menu li a{
+	color: black;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 15px;
+}
+div.menu a:hover{
+	color: white;
+}
+
+div img{
+	margin-top: 25px;
+	margin-left: 35px;
+	margin-right: 35px;
+	max-width: 100%;
+    max-height: 260px;
+}
+	
+div.images p{
+	margin-left: 30px;
+	text-align: justify;
+}	
+
+.imgContainer{
+    float:left;
+}
