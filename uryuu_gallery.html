@@ -1,0 +1,53 @@
+﻿<html>
+<title>
+    Nightt's Personal Webserver
+</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="indiv_gallery_css.css">
+</head>
+<div class="menu">
+    <ul>
+        <li><a href="http://nighttfury.com/">Home</a></li>
+    </ul>
+</div>
+<h1>
+    Minene Uryuu
+</h1>
+
+<body>
+    <div class="imgContainer">
+        <img id="myImg" src="https://imgur.com/hoKWzxE.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/GvYpnFq.jpg" alt="" onclick="imageClicked(this.src)">
+        <img id="myImg" src="https://imgur.com/r8S5GnI.jpg" alt="" onclick="imageClicked(this.src)">
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+
+    <script>
+        function imageClicked(id) {
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = id;
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
