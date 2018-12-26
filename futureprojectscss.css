@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 26, 2018, 1:14:51 PM
+    Author     : Nightt Fury
+*/
+
+body{
+	background-image: url("images/space_background.jpg");
+	color: white;
+}
+div.menu ul{
+	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	background-color: #717272;
+}
+div.menu li{
+	display: inline;  
+}
+div.menu li a{
+	color: #717272;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 15px;
+}
+
+div a img{
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+div a:hover img{
+	transform: scale(1.1,1.1);
+}
+	
+div.images p{
+	margin-left: 30px;
+	text-align: justify;
+	width: 146px;
+}	
+
+.imgContainer{
+    float:left;
+}
