@@ -21,10 +21,9 @@
 		
         <div id="output"></div>
 	
-        
+            
         
         <script>
-            
             readTextFile("test.txt");
             
             function readTextFile(file) {
@@ -32,12 +31,13 @@
                 
                 rawFile.onreadystatechange = function () {
                     if (rawFile.readyState === 4 && (rawFile.status === 200 || rawFile.status == 0)){
-                            document.getElementById("output").innerHTML = rawFile.responseText;    
+                            document.getElementById("output").innerHTML = rawFile.responseText;
                     }
                 };
                 rawFile.open("GET", file, true);
-                rawFile.send();
+                rawFile.send(null);
+                
+                
             }
         </script>
-        
 </HTML>
