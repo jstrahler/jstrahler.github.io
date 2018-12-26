@@ -19,12 +19,28 @@
 			.....
 		</H1>
 		
-	<body>
+        <p id="output"></p>
 	
-		Upgrading in Progress
-		
-		
-		
-	</body>
-	
+        
+        
+        <script>
+            
+            document.getElementById("output").innerHTML = readTextFile("test.txt");
+            
+            
+            function readTextFile(file) {
+                var rawFile = new XMLHttpRequest();
+                rawFile.open("GET", file, false);
+                rawFile.onreadystatechange = function () {
+                    if (rawFile.readyState === 0) {
+                        if (rawFile.status === 200 || rawFile.status == 0) {
+                            var allText = rawFile.responseText;
+                            return allText;
+                        }
+                    }
+                }
+                //rawFile.send(null);
+            }
+        </script>
+        
 </HTML>
