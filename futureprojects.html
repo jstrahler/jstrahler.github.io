@@ -19,7 +19,7 @@
 			.....
 		</H1>
 		
-        <p id="output"></p>
+        <div id="output"></div>
 	
         
         
@@ -32,10 +32,9 @@
                 
                 rawFile.onreadystatechange = function () {
                     if (rawFile.readyState === 4 && (rawFile.status === 200 || rawFile.status == 0)){
-                            document.getElementById("output").innerHTML = this.responseText;    
+                            document.getElementById("output").innerHTML = rawFile.responseText;    
                     }
-                    
-                }
+                };
                 rawFile.open("GET", file, true);
                 rawFile.send();
             }
