@@ -9,14 +9,14 @@ and open the template in the editor.
 */
 
 body{
-	background-image: url("images/space_background.jpg");
+	background-image: url("images/purple_background2.jpg");
 	color: white;
 }
 div.menu ul{
 	list-style-type: none;
     	margin: 0px;
     	padding: 0px;
-    	background-color: #333333;
+    	background-color: #794A81;
 }
 div.menu li{
 	display: inline;  
@@ -58,7 +58,7 @@ div.images p{
     margin-left: 100px;
     margin-top: 50;
     color: white;
-    background-color: gray;
+    background-color: #794A81;
     word-wrap: break-word;
     width: 600px;
 }

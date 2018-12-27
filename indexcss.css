@@ -1,5 +1,5 @@
 body{
-	background-image: url("images/space_background.jpg");
+	background-image: url("images/purple_background.jpg");
 	color: white;
 }
 div.menu ul{
@@ -12,7 +12,7 @@ div.menu li{
 	display: inline;  
 }
 div.menu li a{
-	color: #e6e6e6;
+	color: #333333;
 	font-size: 30px;
 	text-decoration: none;
 	margin: 15px;
