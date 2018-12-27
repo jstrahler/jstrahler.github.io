@@ -15,13 +15,18 @@ body{
 
 #menu{
     background-color: #333333;
-    padding: 0px;
+    top: 0;
+    left: 0;
     margin: 0px;
     width: 100%;
+    overflow: hidden;
 }
 
 #menu ul{
-	list-style-type: none;
+	list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
 }
 #menu li{
 	display: inline;  
@@ -30,39 +35,19 @@ body{
 	color: #e6e6e6;
 	font-size: 30px;
 	text-decoration: none;
-	margin-right: 15px;
+	margin-right: 20px;
+        text-align: left;
 }
 
 #menu li a:hover{
     color: white;
 }
 
-div a img{
-	margin-top: 25px;
-	margin-left: 25px;
-	margin-right: 25px;
-}
-
-div a:hover img{
-	transform: scale(1.1,1.1);
-}
-	
-div.images p{
-	margin-left: 30px;
-	text-align: justify;
-	width: 146px;
-}	
-
-.imgContainer{
-    float:left;
-}
-
-
 #output p{
     font-size: 20px;
-    margin-left: 60px;
+    margin-left: 10%;
     margin-top: 50px;
-    margin-right: 20px;
+    margin-right: 5%;
     float: left;
     color: white;
     background-color: #794A81;
