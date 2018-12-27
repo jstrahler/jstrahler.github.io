@@ -18,11 +18,18 @@ div.menu li a{
 	margin: 15px;
 }
 
+div.menu li a:hover{
+    color: white;
+}
+
+
 div a img{
 	margin-top: 25px;
 	margin-left: 25px;
 	margin-right: 25px;
 }
+
+
 
 div a:hover img{
 	transform: scale(1.1,1.1);
