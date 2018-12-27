@@ -1,12 +1,24 @@
+
+html, body {
+  overflow-x: hidden;
+}
+
 body{
 	background-image: url("images/purple_background2.jpg");
 	color: white;
 }
+
+#menu{
+    background-color: #333333;
+    width: 120%;
+    margin-left: -40px;
+    
+}
+
+
 #menu ul{
-	list-style-type: none;
-    	margin: 0px;
-    	padding: 0px;
-    	background-color: #333333;
+	list-style: none;
+        overflow: hidden;
 }
 #menu li{
 	display: inline;  
@@ -19,9 +31,9 @@ body{
 	margin: 15px;
 }
 
-#menu li a:hover{
+/*#menu li a:hover{
     color: white;
-}
+}*/
 
 
 div a img{

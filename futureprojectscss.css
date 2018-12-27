@@ -8,6 +8,11 @@ and open the template in the editor.
     Author     : Nightt Fury
 */
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 body{
 	background-image: url("images/purple_background2.jpg");
 	color: white;
@@ -15,17 +20,13 @@ body{
 
 #menu{
     background-color: #333333;
-    top: 0;
-    left: 0;
-    margin: 0px;
-    width: 100%;
-    overflow: hidden;
+    width: 120%;
+    margin-left: -40px;
+    
 }
 
 #menu ul{
 	list-style: none;
-        margin: 0 auto;
-        padding: 0;
         overflow: hidden;
 }
 #menu li{
@@ -45,12 +46,16 @@ body{
 
 #output p{
     font-size: 20px;
-    margin-left: 10%;
-    margin-top: 50px;
-    margin-right: 5%;
+    margin-left: 2.5%;
+    margin-top: 30px;
+    margin-right: 2.5%;
     float: left;
     color: white;
-    background-color: #794A81;
+    
+    outline-color: #D0B4D5;
+    outline-style: solid;
+    outline-offset: 5px;
+    
     word-wrap: break-word;
-    width: 500px;
+    width: 430px;
 }
