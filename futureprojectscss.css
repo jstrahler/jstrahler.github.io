@@ -60,10 +60,12 @@ div.images p{
 
 #output p{
     font-size: 20px;
-    margin-left: 100px;
-    margin-top: 50;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-right: 20px;
+    float: left;
     color: white;
     background-color: #794A81;
     word-wrap: break-word;
-    width: 600px;
+    width: 500px;
 }
