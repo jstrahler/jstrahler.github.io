@@ -47,3 +47,14 @@ div.images p{
 .imgContainer{
     float:left;
 }
+
+
+#output p{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 50;
+    color: white;
+    background-color: gray;
+    word-wrap: break-word;
+    width: 600px;
+}
