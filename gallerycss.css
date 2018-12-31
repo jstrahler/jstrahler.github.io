@@ -29,6 +29,10 @@ div a img{
 	margin-right: 35px;
 	max-width: 100%;
     	max-height: 260px;
+        
+        outline-color: #D0B4D5;
+        outline-style: solid;
+        outline-offset: 5px;
 }
 
 div a:hover img{
