@@ -1,26 +1,37 @@
+html, body {
+  overflow-x: hidden;
+}
+
+
 body{
 	background-image: url("images/purple_background2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
 	color: white;
 }
-div.menu ul{
-	list-style-type: none;
-   	margin: 0;
-   	padding: 0;
-    	background-color: gray;
+
+#menu{
+    background-color: #333333;
+    width: 120%;
+    margin-left: -40px;
+    
 }
-div.menu li{
+
+#menu ul{
+	list-style: none;
+        overflow: hidden;
+}
+#menu li{
 	display: inline;  
 }
-div.menu li a{
-	color: black;
+#menu li a{
+	color: #e6e6e6;
 	font-size: 30px;
 	text-decoration: none;
-	margin: 15px;
+	margin-right: 20px;
+        text-align: left;
 }
-div.menu a:hover{
-	color: white;
+
+#menu li a:hover{
+    color: white;
 }
 
 div a img{
