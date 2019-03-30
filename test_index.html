@@ -1,0 +1,88 @@
+<HTML>
+	<head>
+	</head>
+
+	
+	
+	<body>
+	
+	
+		<select id = "pull">
+			<option value="temp">Choose a Class</option>
+			<option value="class1">Class 1</option>
+			<option value="class2">Class 2</option>
+			<option value="class3">Class 3</option>
+		</select>
+		<button onclick="selectClass()">Select Class</button>
+		
+	</body>
+	
+	<div id = "searchData">
+		<input type="text" id="search" placeholder="Search">
+		<button onclick="searchDataTable()">Search</button>
+	</div>
+	
+	
+	<div id="output"></div>
+	
+	
+	
+	
+<SCRIPT type="text/javascript">
+	
+	readTextFile("data.csv");
+            
+            function readTextFile(file) {
+                var rawFile = new XMLHttpRequest();
+                var table = "";
+				
+                rawFile.onreadystatechange = function () {
+                    if (rawFile.readyState === 4 && (rawFile.status === 200 || rawFile.status == 0)){
+                            document.getElementById("output").innerHTML =  rawFile.responseText;
+							
+							var text = rawFIle.responseText;
+							var split = text.split("\n");
+							var headerSplit = split[0].split(",");
+							table += "<tr>"
+							table = table + "<th>" + headerSplit[0] + "</th>";
+							document.getElementById("output").innerHTML =  headerSplit;
+							
+							for (var i = 1; i < split.length; i++){
+								
+							}
+							
+							
+                    }
+                };
+                rawFile.open("GET", file, true);
+                rawFile.send(null);
+                
+                
+            }
+
+			
+			
+			
+
+
+	function selectClass(){
+		var e = document.getElementById("pull") ;
+		var sel = e.options[e.selectedIndex].value;
+		if (sel == "class2"){
+			document.getElementById("output").innerHTML =  "YESSSSS";
+		} else {
+			document.getElementById("output").innerHTML =  "NOOOOO";
+		}
+	}
+	
+	function searchDataTable(){
+		 if (document.getElementById("search").value == "hi"){
+		 
+			document.getElementById("output").innerHTML =  "hi";
+			
+		 }
+	}
+
+
+</SCRIPT>
+</HTML>
