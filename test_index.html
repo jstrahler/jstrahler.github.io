@@ -38,7 +38,7 @@
 				
                 rawFile.onreadystatechange = function () {
                     if (rawFile.readyState === 4 && (rawFile.status === 200 || rawFile.status == 0)){
-                            document.getElementById("output").innerHTML =  rawFile.responseText;
+                            
 							
 							var text = rawFIle.responseText;
 							var split = text.split("\n");
