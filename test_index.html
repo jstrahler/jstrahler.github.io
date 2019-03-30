@@ -45,7 +45,12 @@
 							var headerSplit = split[0].split(",");
 							table += "<tr>"
 							table = table + "<th>" + headerSplit[0] + "</th>";
-							document.getElementById("output").innerHTML =  headerSplit;
+							table = table + "<th>" + headerSplit[1] + "</th>";
+							table = table + "<th>" + headerSplit[2] + "</th>";
+							table += "</tr>"
+							
+							
+							document.getElementById("output").innerHTML =  table;
 							
 							for (var i = 1; i < split.length; i++){
 								
