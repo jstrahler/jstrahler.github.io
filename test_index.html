@@ -38,7 +38,6 @@
 				
                 rawFile.onreadystatechange = function () {
                     if (rawFile.readyState === 4 && (rawFile.status === 200 || rawFile.status == 0)){
-                            
 							
 							var text = rawFile.responseText;
 							var split = text.split("\n");
@@ -48,15 +47,17 @@
 							table = table + "<th>" + headerSplit[1] + "</th>";
 							table = table + "<th>" + headerSplit[2] + "</th>";
 							table += "</tr>"
-							
-							
-							document.getElementById("output").innerHTML =  table;
-							
+
 							for (var i = 1; i < split.length; i++){
-								
+								var tempSplit = split[i].split(",");
+								table += "<tr>";
+								table = table + "<td>" + tempSplit[0] + "</td>";
+								table = table + "<td>" + tempSplit[1] + "</td>";
+								table = table + "<td>" + tempSplit[2] + "</td>";
+								table += "</tr>"
 							}
 							
-							
+							document.getElementById("output").innerHTML =  table;
                     }
                 };
                 rawFile.open("GET", file, true);
