@@ -29,9 +29,8 @@
 	
 	
 <SCRIPT type="text/javascript">
+	var classFile = "";
 	
-	readTextFile("data.csv");
-            
             function readTextFile(file) {
                 var rawFile = new XMLHttpRequest();
                 var table = "<table>";
@@ -56,6 +55,7 @@
 								table = table + "<td>" + tempSplit[2] + "</td>";
 								table += "</tr>"
 							}
+							
 							table += "</table>";
 							document.getElementById("output").innerHTML =  table;
                     }
@@ -74,8 +74,9 @@
 	function selectClass(){
 		var e = document.getElementById("pull") ;
 		var sel = e.options[e.selectedIndex].value;
-		if (sel == "class2"){
-			document.getElementById("output").innerHTML =  "YESSSSS";
+		if (sel == "class1"){
+			classFile = "data.csv";
+			readTextFile(classFile);
 		} else {
 			document.getElementById("output").innerHTML =  "NOOOOO";
 		}
