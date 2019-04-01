@@ -64,9 +64,10 @@
 	}
 	
 	function searchDataTable(){
-		 if (document.getElementById("search").value == "hi"){
+		var searchVal = document.getElementById("search").value;
+		 if (searchVal == "hi"){
 		 
-			document.getElementById("output").innerHTML =  document.getElementById("search").value;
+			document.getElementById("output").innerHTML =  searchVal;
 			
 		 }
 	}
